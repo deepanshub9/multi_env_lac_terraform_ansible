@@ -68,6 +68,10 @@ git clone https://github.com/deepanshub9/multi_env_lac_terraform_ansible.git
 cd multi_env_lac_terraform_ansible
 ```
 
+<img width="1910" height="887" alt="Image" src="https://github.com/user-attachments/assets/d7589974-27b4-416c-b12c-a2b3d5b8343e" />
+
+<img width="1917" height="882" alt="Image" src="https://github.com/user-attachments/assets/a8bff26f-ba6e-4271-84bb-a1266b7fed5a" />
+
 ### **2. Install Required Tools**
 
 #### **Ubuntu/Debian:**
