@@ -1,0 +1,22 @@
+---
+# tasks file for nginx-role
+- name: Update apt cache
+  apt:
+    update_cache: yes
+
+- name: Install nginx
+  apt:
+    name: nginx
+    state: latest
+
+- name: Start and enable nginx
+  service:
+    name: nginx
+    state: started
+    enabled: yes
+
+- name: Deploy webpage
+  copy:
+    src: index.html
+    dest: /var/www/html/index.html
+  notify: restart nginx

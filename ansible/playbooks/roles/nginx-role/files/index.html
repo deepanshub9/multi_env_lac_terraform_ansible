@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amitabh Soni – DevOps Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 2.5em; }
+    header p { font-size: 1.2em; margin-top: 10px; }
+    nav { display: flex; justify-content: center; gap: 20px; background: #333; padding: 10px; }
+    nav a { color: #fff; text-decoration: none; padding: 8px; transition: background 0.3s; }
+    nav a:hover { background: #444; }
+    section { padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px,1fr)); gap: 20px; }
+    .project {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+      background: #f9f9f9;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    button {
+      padding: 12px 24px;
+      background: #007acc;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover { background: #005fa3; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Deepanshu</h1>
+    <p>DevOps Engineer • Automation • CI/CD • Cloud Infrastructure</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Get In Touch</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m Deepanshu – a DevOps Engineer passionate about automating workflows, enhancing collaboration between development and operations, and building scalable, secure cloud-native systems. I specialize in CI/CD pipelines, infrastructure-as-code, containerization, and observability.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Banking Application (DevSecOps on AWS EKS)</h3>
+        <p>A secure, multi‑tier banking application deployed on AWS using Kubernetes and Docker. Integrated CI/CD pipelines, auto‑scaling, and monitoring for 99.9% uptime.</p>
+      </div>
+      <div class="project">
+        <h3>Google Gemini Clone (Next.js + AWS EKS)</h3>
+        <p>A Gemini-like app built with Next.js, deployed via GitOps using ArgoCD and Jenkins, with automated security testing and auto rollbacks.</p>
+      </div>
+      <div class="project">
+        <h3>Multi‑Environment IaC with Terraform & Ansible</h3>
+        <p>Automated provisioning for dev, staging, and prod environments with Terraform and Ansible—cutting provisioning time from days to hours.</p>
+      </div>
+      <div class="project">
+        <h3>Node.js Todo App CI/CD Pipeline</h3>
+        <p>Implemented AWS CodePipeline for zero‑downtime deployments and automated validation/testing workflows.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <p>Feel free to reach out for feedback, collaboration, or simply to connect!</p>
+    <button onclick="openContact()">Contact Me</button>
+  </section>
+
+  <footer>
+    <p>Designed and built by Deepanshu</p>
+    <p><a href="https://deepanshu.engineer" style="color:#fff;">Deepanshu DevOps Engineer</a></p>
+  </footer>
+
+  <script>
+    function openContact() {
+      window.location.href = 'mailto:deepanshu.b096@gmail.com';
+    }
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>

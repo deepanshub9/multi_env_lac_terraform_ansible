@@ -1,0 +1,9 @@
+[servers]
+server1 ansible_host=34.235.116.152
+server2 ansible_host=54.221.53.170
+
+[servers:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=~/terraform-key
+ansible_python_interpreter=/usr/bin/python3
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
